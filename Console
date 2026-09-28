@@ -1,0 +1,31 @@
+public abstract class Console {
+
+    private String consoleType;
+    private String store;
+    private int totalSales;
+
+    // Constructor
+    public Console(String consoleType, String store, int totalSales) {
+        this.consoleType = consoleType;
+        this.store = store;
+        this.totalSales = totalSales;
+    }
+
+    // Get console type
+    public String getConsoleType() {
+        return consoleType;
+    }
+
+    // Get store
+    public String getStore() {
+        return store;
+    }
+
+    // Get total sales
+    public int getTotalSales() {
+        return totalSales;
+    }
+
+    // Abstract method
+    public abstract void printReport();
+}
